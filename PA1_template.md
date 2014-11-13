@@ -27,7 +27,7 @@ for (i in 1:length(dates)){
 hist(totals,main="Total number of steps taken each day",col="red")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/1.png) 
 
 ```r
 meantotal=mean(totals)
@@ -51,7 +51,7 @@ for (m in 1:length(intervals)){
 plot(intervals,stepseveryinterval,type="l")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/2.png) 
 
 ```r
 maxsteps <- max(stepseveryinterval)
@@ -95,7 +95,7 @@ for (i in 1:length(newdates)){
 hist(newtotals,main="Total number of steps taken each day",col="red")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/3.png) 
 
 ```r
 newmeantotal=mean(newtotals)
@@ -144,4 +144,4 @@ library(lattice)
 xyplot(newstepseveryinterval ~ newintervals | factor(weekday), data=df2, type="l", layout=c(1,2),xlab="Interval",ylab="Number of steps")
 ```
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](figure/4.png) 
